@@ -168,7 +168,10 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f6f6f6;
+  background-color: rgba(246, 246, 246, 0.95);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .navigation h1 {
   padding-top: 1rem;
@@ -197,6 +200,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.container {
+  margin-top: 108px;
 }
 .home .intro h2 {
   padding: 15px;
