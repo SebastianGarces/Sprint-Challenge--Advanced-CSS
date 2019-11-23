@@ -1,1 +1,25 @@
 // Mixins Here
+
+.flex(@direction, @justify, @align) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.nav-link() {
+    margin: 0 2rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: @nav-font;
+}
+
+.sign-up-btn(@fontsize, @color, @bg-color) {
+    font-size: @fontsize;
+    color: @color;
+    background-color: @bg-color;
+    padding: 1rem 2rem;
+    width: 120px;
+    text-align: center;
+    border-radius: 10px;
+}
