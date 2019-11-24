@@ -317,6 +317,7 @@ footer {
     width: 100%;
     padding: 3rem 0;
     font-weight: bold;
+    display: block;
   }
 }
 .home .walk .walk-img {
