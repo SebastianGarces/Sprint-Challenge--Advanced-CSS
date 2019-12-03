@@ -1,0 +1,37 @@
+.form-container {
+    .flex(column, center, center);
+
+    form {
+        .flex(column, center, flex-start);
+        padding: 2rem;
+        border: 1px solid @ebony-clay;
+        border-radius: 10px;
+        width: 80%;
+        margin: 5em 0;
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            .input;
+        }
+
+        .btn {
+            .sign-up-btn(2rem, @wild-sand, @btn-bg-color);
+            transition: all 150ms ease;
+            border: none;
+            &:hover {
+                color: @btn-bg-color;
+                background-color: @wild-sand;
+                transition: all 150ms ease;
+            }
+
+            @media @phone {
+                .btn {
+                    width: 100%;
+                    padding: 3rem 0;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
